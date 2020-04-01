@@ -1,0 +1,10 @@
+dist: trusty
+sudo: required
+language: csharp
+mono: none
+dotnet: 2.1.402
+solution: Company.sln
+script:
+  - cd Company
+  - dotnet restore
+  - dotnet build -c Release
