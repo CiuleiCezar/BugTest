@@ -6,7 +6,9 @@ mono:
   - latest
 dotnet: 2.1.101
 solution: Company.sln
+
+before_script: cd Company
+
 script:
-  - cd Company
   - dotnet restore
   - dotnet build -c Release
