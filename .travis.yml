@@ -5,7 +5,8 @@ mono:
   - 5.4.1
   - latest
 dotnet: 2.1.101
-solution: ./Company/Company.sln
+solution: Company.sln
+install: nuget restore Company.sln
 
 before_script: cd Company
 
