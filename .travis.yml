@@ -1,7 +1,9 @@
 dist: trusty
 sudo: required
 language: csharp
-mono: none
+mono: 
+  - 5.4.1
+  - latest
 dotnet: 2.1.101
 solution: Company.sln
 script:
